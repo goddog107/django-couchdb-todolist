@@ -1,0 +1,18 @@
+.header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.box-shadow {
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+
+.body-container {
+  margin-bottom: 50px;
+}
+
+.dataTables_filter input {
+  border: 1px solid lightgrey !important;
+}

@@ -1,0 +1,23 @@
+{% extends "orm/layout.html" %}
+
+{% block header %}{% endblock %}
+{% block content %}
+<div class="box-shadow">
+  <a href="/" class="btn btn-default" style="float: right">
+    Home
+  </a>
+  <h2>{{title}}</h2>
+  <hr>
+  <textarea id="contentContianer" style="border: none; width: 100%; outline: none" readonly>{{content}}</textarea>
+  <hr>
+  <div>
+    <a class="btn btn-default" href="/">Back</a>
+    <a href="/post/edit/{{id}}/" class="btn btn-success" style="float: right">
+      <i class="fa fa-pencil small"></i> Edit
+    </a>
+  </div>
+</div>
+<script>
+  autosize(document.getElementById("contentContianer"));
+</script>
+{% endblock %}
